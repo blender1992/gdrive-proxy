@@ -7,4 +7,4 @@ def stream(file_id):
     return redirect(f'https://drive.google.com/uc?export=download&id= {file_id}')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
